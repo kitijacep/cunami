@@ -1,0 +1,74 @@
+// general button styling
+.btn {
+    width: 160px;
+    height: 57px;
+    border-radius: 100px;
+    border: 0 none;
+    font-size: 24px;
+    font-weight: $f-light;
+    line-height: 30px;
+}
+
+// back button styling
+.btn-primary.back {
+    background: none;
+    border: 2px solid $c-violet;
+    color: $c-violet;
+    float: left;
+
+    &:hover,
+    &:focus,
+    &.focus {
+        color: $c-lighten-violet;
+        border-color: $c-lighten-violet;
+    }
+
+    &:active,
+    &.active {
+        border-color: $c-darker-violet;
+        color: $c-darker-violet;
+        box-shadow: none;
+        background: none;
+        outline: 0 none;
+
+        &:focus,
+        &.focus {
+            border-color: $c-darker-violet;
+            color: $c-darker-violet;
+            background: none;
+            outline: 0 none !important;
+            box-shadow: $c-darker-violet !important;
+        }
+    }
+}
+
+// forward button styling
+.btn-success.forward {
+    border: 2px solid $c-violet;
+    background: $c-violet;
+    color: $c-white;
+    float: right;
+
+    &:hover,
+    &:focus,
+    &.focus {
+        background: $c-lighten-violet;
+        border-color: $c-lighten-violet;
+    }
+
+    &:active,
+    &.active {
+        border-color: $c-darker-violet;
+        background: $c-darker-violet;
+        box-shadow: none;
+        outline: 0 none;
+
+        &:focus,
+        &.focus {
+            border-color: $c-darker-violet;
+            background: $c-darker-violet;
+            box-shadow: none;
+            outline: 0 none;
+        }
+    }
+}

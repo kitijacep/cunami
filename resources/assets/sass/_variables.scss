@@ -1,0 +1,26 @@
+// typography variables
+$f-helvetica: Helvetica;
+$f-bold: 700;
+$f-normal: 400;
+$f-light: 300;
+
+$f-xs: 12px;
+$f-s: 20px;
+$f-m: 24px;
+$f-l: 36px;
+$f-xl: 48px;
+
+// height variables
+$h-full: 100vh;
+$h-half: 50vh;
+$h-quarter: 25vh;
+
+// color variables
+$c-white: #fff;
+$c-darker-white: #f7eceb;
+$c-pink: #ebd0ce;
+$c-light-grey: #9597a6;
+$c-violet: #545871;
+$c-light-violet: #e6dbda;
+$c-lighten-violet: lighten($c-violet, 20%);
+$c-darker-violet: darken($c-violet, 10%);

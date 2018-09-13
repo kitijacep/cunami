@@ -1,0 +1,27 @@
+// extendable styling
+%button-white {
+    background-color: $c-white;
+    color: $c-violet;
+}
+
+%button-violet {
+    background-color: $c-violet;
+    color: $c-white;
+}
+
+%button-pink {
+    background-color: $c-pink;
+    color: $c-violet;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// mixins
+@mixin bg-img($img-url) {
+    background-image: $img-url;
+    background-size: cover;
+}

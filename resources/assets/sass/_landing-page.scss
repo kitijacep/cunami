@@ -1,0 +1,233 @@
+* {
+    font-family: $f-helvetica;
+}
+
+.main-page-wrapper {
+    h1 {
+        color: $c-white;
+    }
+
+    .first-panel,
+    .second-panel,
+    .third-panel,
+    .fourth-panel,
+    .fifth-panel {
+        @media (min-width: 576px) {
+            height: $h-full;
+        }
+    }
+
+    .first-panel {
+        @include bg-img(url('/img/bg.png'));
+
+        h1 {
+            margin-top: 3vh;
+        }
+
+        img {
+            margin-top: 10vh;
+        }
+
+        span {
+            color: $c-white;
+        }
+
+        button {
+            @extend %button-white;
+        }
+
+        .links {
+            margin-top: 13vh;
+        }
+
+        .logo-wrapper {
+            margin-top: -4vh;
+        }
+
+        .base-headline {
+            color: $c-white;
+        }
+    }
+
+    .second-panel {
+        h1 {
+            margin-top: 12vh;
+        }
+
+        button {
+            margin-top: 7vh;
+            @extend %button-violet;
+        }
+
+        p {
+            margin-top: 5vh;
+        }
+
+        .collage {
+            margin-top: 12vh;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .collage {
+                margin: 0 auto;
+                padding-left: 17%;
+            }
+
+            img {
+                width: 100% !important;
+            }
+        }
+
+        img {
+            margin: 5px;
+            width: 45%;
+        }
+
+        .bottom-left {
+            color: $c-white;
+            position: absolute;
+            bottom: 25px;
+            left: 45px;
+        }
+
+        .base-headline {
+            color: $c-violet;
+        }
+    }
+
+    .third-panel {
+        background-color: $c-darker-white;
+
+        p {
+            margin-top: 5vh;
+        }
+
+        .side-img {
+            @include bg-img(url('/img/dog-with-girl.png'));
+            height: $h-full;
+        }
+
+        button {
+            @extend %button-violet;
+            margin-top: 7vh;
+
+        }
+
+        .text {
+            margin: auto;
+        }
+
+        .base-headline {
+            color: $c-violet;
+        }
+    }
+
+    .fourth-panel {
+        display: flex;
+        background-color: $c-violet;
+
+        button {
+            @extend %button-pink;
+        }
+    }
+
+    .fifth-panel {
+        .price-tag {
+            @extend %flex-column;
+            padding: 5px;
+            background-color: #f0f1f7;
+        }
+
+        h2 {
+            color: $c-violet;
+            font-size: $f-l;
+            line-height: 56px;
+            font-weight: $f-bold;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card-text {
+            color: $c-violet;
+            font-size: $f-s;
+            line-height: 26px;
+            font-weight: $f-light;
+        }
+
+        .card {
+            width: 20rem;
+            display: inline-block;
+        }
+
+        span {
+            color: $c-light-grey;
+            font-size: $f-xs;
+            font-weight: $f-bold;
+            letter-spacing: 1.2px;
+            line-height: 28px;
+            text-transform: uppercase;
+        }
+
+        button {
+            margin-top: 7vh;
+            @extend %button-violet;
+        }
+
+        .base-headline {
+            color: $c-violet;
+        }
+    }
+
+    .footer {
+        @extend %flex-column;
+        justify-content: center;
+        height: 40vh;
+        background-color: $c-darker-white;
+        color: $c-violet;
+
+        .base-headline {
+            color: $c-violet;
+        }
+
+        #contact {
+            color: $c-violet;
+            opacity: 0.3;
+        }
+    }
+
+    .base-headline {
+        font-size: $f-xl;
+        line-height: 56px;
+        font-weight: $f-bold;
+    }
+
+    .signup-format {
+        width: 256px;
+        height: 56px;
+        border-radius: 100px;
+        font-size: $f-m;
+        font-weight: $f-light;
+        line-height: 32px;
+        outline: 0;
+    }
+
+    .d-inline a {
+        margin: {
+            top: $h-half;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        color: $c-white;
+        font-size: $f-m;
+        line-height: 30px;
+    }
+
+    .base-text {
+        color: $c-violet;
+        font-size: $f-m;
+        line-height: 32px;
+        font-weight: $f-light;
+    }
+
+}
